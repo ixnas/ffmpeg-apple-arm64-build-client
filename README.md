@@ -6,7 +6,7 @@ It's mostly a shell script wrapped in JavaScript, but I used JavaScript because 
 
 You need an Apple Silicon Mac to use this script.
 
-I post new ffmpeg builds every Wednesday. You can download them [here](https://sjoerdscheffer.nl/ffmpeg-builds).
+I post new ffmpeg builds every Wednesday. You can download them [here](https://sjoerdscheffer.nl/category/ffmpeg-builds).
 
 ## Instructions
 - Create a config.json file that looks like this:
