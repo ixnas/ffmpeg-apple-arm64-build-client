@@ -1,0 +1,7 @@
+.DS_Store
+/*.zip.json
+/*.zip
+/node_modules
+/package-lock.json
+/config.json
+/ffmpeg-apple-arm64-*
