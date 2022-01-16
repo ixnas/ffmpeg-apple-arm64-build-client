@@ -233,7 +233,7 @@ async function getVersions()
 		lame: "3.100",
 		opus: "1.3.1",
 		vorbis: await getGitVersion("./vorbis/vorbis"),
-		svtAv1: await getGitVersion("./svt-av1/SVT-AV1"),
+		"svt-av1": await getGitVersion("./svt-av1/SVT-AV1"),
 		libass: await getGitVersion("./libass/libass")
 	};
 }
