@@ -226,7 +226,7 @@ async function getVersions()
 
 	return {
 		aom: await getGitVersion("./aom/aom"),
-		openh264: "2.2.1",
+		openh264: await getGitVersion("./openh264/openh264"),
 		x264: await getGitVersion("./x264/x264-master"),
 		x265: await getGitVersion("./x265/x265_git"),
 		vpx: await getGitVersion("./vpx/libvpx"),
@@ -234,7 +234,7 @@ async function getVersions()
 		opus: "1.3.1",
 		vorbis: await getGitVersion("./vorbis/vorbis"),
 		svtAv1: await getGitVersion("./svt-av1/SVT-AV1"),
-		libass: "0.15.1"
+		libass: await getGitVersion("./libass/libass")
 	};
 }
 
