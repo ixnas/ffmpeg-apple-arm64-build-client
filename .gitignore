@@ -5,3 +5,4 @@
 /package-lock.json
 /config.json
 /ffmpeg-apple-arm64-*
+/out.log
