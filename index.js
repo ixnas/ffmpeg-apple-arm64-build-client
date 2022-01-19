@@ -235,7 +235,8 @@ async function getVersions()
 		vorbis: await getGitVersion("./vorbis/vorbis"),
 		"svt-av1": await getGitVersion("./svt-av1/SVT-AV1"),
 		libass: await getGitVersion("./libass/libass"),
-		soxr: await getGitVersion("./soxr/soxr")
+		soxr: await getGitVersion("./soxr/soxr"),
+		openjpeg: await getGitVersion("./openjpeg/openjpeg")
 	};
 }
 
