@@ -234,7 +234,8 @@ async function getVersions()
 		opus: "1.3.1",
 		vorbis: await getGitVersion("./vorbis/vorbis"),
 		"svt-av1": await getGitVersion("./svt-av1/SVT-AV1"),
-		libass: await getGitVersion("./libass/libass")
+		libass: await getGitVersion("./libass/libass"),
+		soxr: await getGitVersion("./soxr/soxr")
 	};
 }
 
