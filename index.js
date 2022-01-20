@@ -237,7 +237,8 @@ async function getVersions()
 		libass: await getGitVersion("./libass/libass"),
 		soxr: await getGitVersion("./soxr/soxr"),
 		openjpeg: await getGitVersion("./openjpeg/openjpeg"),
-		"avisynth+": await getGitVersion("./avisynthplus/AviSynthPlus")
+		"avisynth+": await getGitVersion("./avisynthplus/AviSynthPlus"),
+		xvid: await getSnapshotVersion("./xvid")
 	};
 }
 
@@ -248,6 +249,15 @@ async function getGitVersion(dir)
 	const out = await runCommand("git", ["show", "-s", "--format=%cd", "--date=local", "HEAD"]);
 	chdir(oldDir);
 	return "master (" + out.split("\n")[0] + " UTC)";
+}
+
+async function getSnapshotVersion(dir)
+{
+	const oldDir = (await runCommand("pwd")).split("\n")[0];
+	chdir(dir);
+	const out = await runCommand("ls");
+	chdir(oldDir);
+	return "snapshot (" + out.split("\n")[0] + ")";
 }
 
 main();
