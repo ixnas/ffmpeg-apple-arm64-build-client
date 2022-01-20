@@ -227,7 +227,7 @@ async function getVersions()
 	return {
 		aom: await getGitVersion("./aom/aom"),
 		openh264: await getGitVersion("./openh264/openh264"),
-		x264: await getGitVersion("./x264/x264-master"),
+		x264: await getGitVersion("./x264/x264"),
 		x265: await getGitVersion("./x265/x265_git"),
 		vpx: await getGitVersion("./vpx/libvpx"),
 		lame: "3.100",
