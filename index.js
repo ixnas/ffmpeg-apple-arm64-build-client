@@ -236,7 +236,8 @@ async function getVersions()
 		"svt-av1": await getGitVersion("./svt-av1/SVT-AV1"),
 		libass: await getGitVersion("./libass/libass"),
 		soxr: await getGitVersion("./soxr/soxr"),
-		openjpeg: await getGitVersion("./openjpeg/openjpeg")
+		openjpeg: await getGitVersion("./openjpeg/openjpeg"),
+		"avisynth+": await getGitVersion("./avisynthplus/AviSynthPlus")
 	};
 }
 
