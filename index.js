@@ -226,7 +226,6 @@ async function getVersions()
 
 	return {
 		aom: await getGitVersion("./aom/aom"),
-		openh264: await getGitVersion("./openh264/openh264"),
 		x264: await getGitVersion("./x264/x264"),
 		x265: await getGitVersion("./x265/x265_git"),
 		vpx: await getGitVersion("./vpx/libvpx"),
@@ -237,7 +236,6 @@ async function getVersions()
 		libass: await getGitVersion("./libass/libass"),
 		soxr: await getGitVersion("./soxr/soxr"),
 		openjpeg: await getGitVersion("./openjpeg/openjpeg"),
-		"avisynth+": await getGitVersion("./avisynthplus/AviSynthPlus"),
 		xvid: await getSnapshotVersion("./xvid")
 	};
 }
